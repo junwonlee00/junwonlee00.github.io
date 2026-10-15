@@ -155,8 +155,33 @@ h1.name {
   font-weight: normal;
 }
 
+.profile-cell .name {
+  padding-top: 0;
+  text-align: left;
+}
+
+.profile-photo {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-photo-placeholder {
+  display: grid;
+  place-items: center;
+  background: #f1f1f1;
+  color: #666;
+}
+
 .profile-cell p {
   line-height: 1.65;
+}
+
+.profile-links {
+  text-align: left;
 }
 
 .profile-links a {
@@ -185,6 +210,20 @@ a:focus-visible {
 @media (max-width: 600px) {
   .site-table {
     padding: 0 8px;
+  }
+
+  .profile-layout,
+  .profile-layout tbody,
+  .profile-layout tr,
+  .profile-image-cell,
+  .profile-cell {
+    display: block;
+    box-sizing: border-box;
+    width: 100% !important;
+  }
+
+  .profile-photo {
+    width: 160px;
   }
 
   .publication-image,

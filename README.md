@@ -15,10 +15,18 @@ There is no build command or JavaScript dependency. GitHub Pages publishes the
 root of `main`. Do not copy the template author's `CNAME`, analytics, portrait,
 CV or publication content.
 
+## Profile photo
+
+The left side of the profile currently contains a neutral photo placeholder.
+When the portrait is ready, replace that `div` with an `img` using the
+`profile-photo` class, the local image path and `alt="Junwon Lee"`.
+The profile sits beside the introduction on desktop and above it on mobile.
+Email and GitHub links appear directly below the introduction.
+
 ## Adding a publication
 
-When a paper is public, add a `Publications` heading and a presentation table
-after the profile table. Each `tr` should contain a `publication-image` cell and
+When a paper is public, add a presentation table inside the existing `Research`
+section. Each `tr` should contain a `publication-image` cell and
 a `publication-content` cell. Use the original `.papertitle` class for its title.
 The stylesheet already stacks these cells on narrow screens.
 
